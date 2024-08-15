@@ -1,17 +1,17 @@
 base:
-  project: winequality-project
+  project: diabetes-project
   random_state: 42
   target_col: TARGET
 
 data_source:
-  s3_source: data_given/winequality.csv
+  s3_source: data_given/diabetes.csv
 
 load_data:
-  raw_dataset_csv: data/raw/winequality.csv
+  raw_dataset_csv: data/raw/diabetes.csv
 
 split_data:
-  train_path: data/processed/train_winequality.csv
-  test_path: data/processed/test_winequality.csv
+  train_path: data/processed/train_diabetes.csv
+  test_path: data/processed/test_diabetes.csv
   test_size: 0.2
 
 automl:
